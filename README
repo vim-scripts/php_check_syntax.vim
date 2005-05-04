@@ -1,0 +1,14 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1272
+
+This plugin is superseded by vimscript #1431.
+
+This ftplugin is based on Klaus Horsten's php_console (vimscript #779). In 
+opposition to php_console, it only checks the syntax. It does this automatically
+when opening or closing a file.
+
+If you use this as a ftplugin, the script will miss the first BufRead event 
+as this is when it's being loaded.
+
+If php isn't in your path, set the g:php_check_syntax_cmd variable 
+(including the -l switch).
+
